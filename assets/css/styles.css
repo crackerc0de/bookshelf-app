@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #cccccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > h2 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.container > h4 {
+  animation: 5s p-anim ease infinite;
+  width: 1024px;
+  text-align: justify;
+  height: fit-content;
+}
+
+.container > h4 > span {
+  font-weight: bold;
+  align-items: center;
+}
+
+.container .row {
+  width: 1024px;
+  border-radius: 8px;
+  background-color: #eac696;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.shadow {
+  box-shadow: 0 10px 15px rgba(138, 9, 9, 0.05),
+    0 15px 40px rgba(126, 3, 3, 0.932);
+}
+
+.card {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes p-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+
+  .container .row {
+    width: 100%;
+  }
+
+  .container > h4 {
+    width: 100%;
+  }
+
+  .form-group {
+    width: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+.form-group {
+  margin-top: 5px;
+  margin-bottom: px;
+}
+
+.form-label {
+  margin: 0 0;
+}
+.form-control {
+  border-radius: 8px;
+}
+
+input:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+#ongoing {
+  font-weight: bold;
+  color: black;
+}
+
+.check-button {
+  width: 30px;
+  height: 30px;
+  align-items: end;
+
+  background: url("../img/check-outline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.check-button:hover {
+  background: url("../img/check-solid.svg");
+  background-size: contain;
+}
+
+.undo-button {
+  width: 40px;
+  height: 40px;
+  background: url("../img/udon-button.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undo-button:hover {
+  background: url("../img/udon-button.svg");
+  background-size: contain;
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  background: url("../img/search-button.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.search-button:hover {
+  background: url("../img/search-button.svg");
+  background-size: contain;
+}
+
+.delete-button {
+  width: 40px;
+  height: 40px;
+  background: url("../img/delete-button.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-button:hover {
+  background: url("../img/delete-button.svg");
+  background-size: contain;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-size: 21px;
+}
+
+.card > p {
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  color: aliceblue;
+  background-color: burlywood;
+}
+
+footer a {
+  text-decoration: none;
+  color: yellow;
+}
